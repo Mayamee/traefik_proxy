@@ -14,3 +14,9 @@ http:
         - auth
       tls:
         certResolver: letsencrypt
+        options: onlytls13
+
+tls:
+  options:
+    onlytls13:
+      minVersion: VersionTLS12
