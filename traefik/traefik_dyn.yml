@@ -1,0 +1,16 @@
+http:
+  middlewares:
+    auth:
+      basicAuth:
+        users:
+          - <htpasswd -bn user password>
+  routers:
+    api:
+      entryPoints:
+        - https
+      rule: Host(`<dns_name>`)
+      service: api@internal
+      middlewares:
+        - auth
+      tls:
+        certResolver: letsencrypt
