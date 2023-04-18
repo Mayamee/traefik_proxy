@@ -1,0 +1,2 @@
+acme.json should have 600 mode 
+(do this) $: chmod 600 acme.json
