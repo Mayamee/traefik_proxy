@@ -1,0 +1,9 @@
+/<path> {
+        daily
+        rotate 4
+        compress
+        delaycompress
+        missingok
+        notifempty
+        size 10M
+}
